@@ -1,0 +1,32 @@
+.titulo{
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    align-content: center 
+} 
+
+section {
+    display: flex;
+    width: 600px; 
+    height: 430px; 
+}
+section img {
+    width: 0px; 
+    flex-grow: 1; 
+    object-fit: cover;
+    opacity: 0.8;
+    transition: 0.5s ease;
+} 
+/*Hover es una pseudoclase*/
+    section img: hover {
+    cursor: crosshair;
+    width: 300px;
+    opacity: 1;
+    filter: contrast (120%);
+    } 
+
+.galeria{
+margin:;
+padding: ;
+align : center ;
+
+}
