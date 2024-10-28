@@ -1,0 +1,351 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: cursive;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background: white;
+}
+
+.header {
+    background: wheat;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+
+
+/*acomoda una arriba de los iconos y ocultas los nombres de las redes sociales atras de cada circulo*/
+
+.redesheader .boton {
+    display: inline-block;
+    height: 57px;
+    width: 57px;
+    margin: 0 5px;
+    overflow: hidden;
+    background: #fff;
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: 0 10px 10px rbga(0, 0, 0, 0.1);
+    transition: all .3s ease-out;
+}
+
+
+/*crea el movimiento de cada uno de las redes sociales con los circulos*/
+
+.redesheader .boton:hover {
+    width: 200px;
+}
+
+
+/*centras los iconos de las redes sociales*/
+
+.redesheader .boton .icono {
+    display: inline-block;
+    height: 60px;
+    width: 60px;
+    border-radius: 50px;
+    box-sizing: border-box;
+    line-height: 60px;
+    text-align: center;
+    transition: all .3s ease-out
+}
+
+
+/*da color al icono*/
+
+.redesheader .boton:nth-child(1):hover,
+.icono span {
+    background: #3b5999;
+    color: #fff;
+}
+
+.redesheader .boton:nth-child(3):hover,
+.icono span {
+    background: linear-gradient(30deg, #3040e6 10%, #d41356, #e74f31, #f0ce6c);
+    color: #fff;
+}
+
+.redesheader .boton:nth-child(2):hover,
+.icono span {
+    background: #1877f2;
+    color: #fff;
+}
+
+.redesheader .boton:nth-child(4):hover,
+.icono span {
+    background: #d50000;
+    color: #fff;
+}
+
+.redesheader .boton:nth-child(5):hover,
+.icono span {
+    background: #d50000;
+    color: #fff;
+}
+
+.redesheader .boton i {
+    font-size: 30px;
+    line-height: 60px;
+}
+
+
+/*granda o achica los iconos de las redes sociales*/
+
+.redesheader .boton span {
+    font-size: 30px;
+    font-weight: 200px;
+    line-height: 60px;
+    margin-left: 10px;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    left: 15%;
+    top: 3.5%;
+    transform: translate(-50%, -50%);
+    padding: 5px;
+}
+
+input {
+    display: flex;
+    outline: none;
+    box-sizing: border-box;
+    height: 30px;
+    width: 0;
+    padding: 0 20px;
+    color: #000;
+    border-radius: 45px;
+    font-size: 20px;
+    border: 1px solid #000;
+    transition: all .7s ease;
+}
+
+::placeholder {
+    color: gray;
+}
+
+.btn {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    background: #000;
+    line-height: 80%;
+    text-align: center;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.btn,
+i {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    color: wheat;
+    line-height: 80px;
+    transition: all .7s ease;
+}
+
+.container:hover input {
+    width: 350px;
+}
+
+.container:hover i {
+    transform: rotate(-360deg);
+}
+
+.btn:hover {
+    background: #000;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav,
+a {
+    gap: 50px;
+}
+
+.agusoro {
+    padding: 200px;
+}
+
+.rooagus {
+    padding: 200px;
+}
+
+.pie {
+    background: blanchedalmond
+}
+
+.redes {
+    display: flex;
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    padding: 20px;
+}
+
+
+/**/
+
+.redes .icon {
+    margin: 0 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    z-index: 2;
+    cursor: pointer;
+    transition: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+
+/*modifica del circulo de las redes de pie de paginas*/
+
+.redes .icon span {
+    position: relative;
+    height: 30px;
+    width: 30px;
+    display: block;
+    background: #fff;
+    text-align: center;
+    border-radius: 100%;
+    z-index: 2;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+/* modifica y centra el icono con su nombre de las redes*/
+
+.redes .icon span i {
+    font-size: 20px;
+    line-height: 30px;
+}
+
+
+/*le da color al icono de redes*/
+
+.redes .icon:hover span i {
+    color: #fff;
+}
+
+
+/*modifica el mesaje que sale del circulo de cada redes y le da color*/
+
+.redes .icon .tooltip {
+    position: absolute;
+    top: 0px;
+    background: #fff;
+    color: #fff;
+    font-size: 20px;
+    padding: 10px 18px;
+    border-radius: 25px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.redes .icon:hover .tooltip {
+    top: -70px;
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.redes .icon .tooltip:before {
+    position: absolute;
+    content: "";
+    height: 15px;
+    width: 15px;
+    bottom: -8px;
+    left: 50%;
+    transform: translateX(-50%) rotate(45deg);
+}
+
+.redes .icon:hover span,
+.redes .icon:hover .tooltip {
+    text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.4);
+}
+
+.redes .facebook:hover span,
+.redes .facebook:hover .tooltip,
+.redes .facebook:hover .tooltip:before {
+    background: #3b5999;
+}
+
+.redes .twitter:hover span,
+.redes .twitter:hover .tooltip,
+.redes .twitter:hover .tooltip:before {
+    background: #46c1f6;
+}
+
+.redes .instagram:hover span,
+.redes .instagram:hover .tooltip,
+.redes .instagram:hover .tooltip:before {
+    background: #e1306c;
+}
+
+.redes .pinterest:hover span,
+.redes .pinterest:hover .tooltip,
+.redes .pinterest:hover .tooltip:before {
+    background: #de463d
+}
+
+.redes .youtube:hover span,
+.redes .youtube:hover .tooltip,
+.redes .youtube:hover .tooltip:before {
+    background: #de463d;
+}
+
+.pieheader,
+.logopie,
+img {
+    display: flex;
+    padding: 20px;
+}
+
+.pieheader,
+.frase,
+p {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.seccionpie,
+a {
+    gap: 80px;
+    display: flex;
+    justify-content: center;
+    color: black;
+}
+
+.derechos,
+a,
+p {
+    gap: 80px;
+    display: flex;
+    justify-content: center;
+    color: black;
+}
+
+.pie {
+    height: 70vh;
+}
