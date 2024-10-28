@@ -1,0 +1,76 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fbeeed; /* Rosita claro */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.receta-detalle {
+    background-color: #fff9f7; /* Beige claro */
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 800px;
+    margin: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Header Styles */
+.receta-detalle h1 {
+    color: #e07a77; /* Rosado suave */
+    font-size: 2em;
+    text-align: center;
+    margin-top: 0;
+}
+
+.receta-detalle h2 {
+    color: #d36f6c;
+    font-size: 1.5em;
+    margin-top: 20px;
+    border-bottom: 2px solid #e0b1b1;
+    padding-bottom: 5px;
+}
+
+/* Image Styling */
+.receta-img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 20px auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* List Styling */
+ul {
+    list-style-type: disc;
+    margin-left: 40px;
+    color: #7c6c69;
+    font-size: 1.1em;
+    padding-left: 15px;
+}
+
+/* Paragraph Styling */
+p {
+    color: #555;
+    line-height: 1.6;
+    font-size: 1em;
+    margin-top: 10px;
+    text-align: justify;
+}
+
+/* Link Styling */
+a {
+    display: inline-block;
+    margin-top: 20px;
+    color: #e07a77;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    color: #d36f6c;
+    text-decoration: underline;
+}

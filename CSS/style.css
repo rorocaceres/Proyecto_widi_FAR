@@ -1,78 +1,197 @@
-body{ 
-    font-family: sans-serif;
+/* Estilo general de la pagina, chicos acá la mejore un poquito */
+body {
+    font-family: Arial, sans-serif;
     margin: 0;
-}
-.titulo{
-    text-align: center;
-    font-family: 'Times New Roman', Times, serif;
-    align-content: center 
-} 
-/*Cosito para las fotos principales roro*/ 
-section{
-    display: flex;
-    width: 900px;
-    height: 400px;
+    color: #333;
+    background-color: #fef6e4; /* Beige claro */
 }
 
-section img{
-    width:0px;
-    flex-grow:1;
+.contenedoor {
+    text-align: center;
+    align-items: center;
+}
+
+/* Título principal */
+.titulo {
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    color: #d97d94; /* Rosita claro */
+    margin-bottom: 1em;
+}
+
+/* Fotos principales, estas son las fotos del cosito que se mueve */
+section {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    width: 100%;
+    max-width: 1200px;
+    margin: 20px auto;
+}
+section img {
+    width: 100%;
+    max-width: 150px;
+    height: auto;
+    flex-grow: 1;
     object-fit: cover;
     opacity: 0.8;
     transition: 0.5s ease;
-    }
-    /*Hover es una pseudo clase*/
-    section img:hover {
-    cursor: crosshair;
-    width: 700px;
-    opacity:1;
-    filter:contrast(120%);
-    }
-a{
+}
+
+section img:hover {
+    cursor: pointer;
+    opacity: 1;
+    transform: scale(1.1);
+    filter: contrast(120%);
+}
+
+/* Links generales, estos son los lincks de arriba */
+a {
     text-decoration: none;
-    color: black;
-} 
-header{
-    display: flex; 
-    background-color: rgb(240, 71, 108);
+    color: #d97d94; /* Rosita claro */
+}
+
+a:hover {
+    color: #ff6b9a; /* Rosita más oscuro */
+}
+
+/* Header */
+header {
+    display: flex;
+    background-color: #fbdedc; /* Fondo rosita claro */
+    background-image: url('Imagenes/fondo_logo.jpg');
     background-size: cover;
-    height: 120px; 
+    background-position: center;
+    height: 150px;
     justify-content: space-between;
     align-items: center;
-    padding: 10px;
+    padding: 10px 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
-.logo{
+
+/* Logo y título en el header */
+.logo {
     display: flex;
     align-items: center;
-} 
-.logo img{
-    height: 200px;
-    margin-right: 20px;
 }
-nav a{
-    font-weight: 600; 
-    padding-right: 10px;
+
+.logo img {
+    width: 150px; /* Ajusta el tamaño que desees */
+    height: auto; /* Esto mantiene la proporción de la imagen */
+    margin-right: 15px;
+    border-radius: 50%;
+    border: 2px solid #d97d94;
 }
-nav a:hover{
-    color: rgb(255, 0, 119);
-} 
-@media (max-width:700px){
-    header{
+
+h1.nombre.pagina {
+    color: #d97d94; /* Rosita claro */
+    font-size: 1.5em;
+    margin: 0;
+}
+
+/* Menú de navegación */
+nav {
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    font-weight: 600;
+    color: #d97d94; /* Rosita claro */
+    padding: 5px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #f9c9c5; /* Beige rosado */
+}
+
+/* Galería */
+.galeria {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    padding: 20px 0;
+}
+
+.galeria img {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.galeria img:hover {
+    transform: scale(1.05);
+}
+
+/* Fieldset y formulario */
+fieldset {
+    background-color: #fef6e4; /* Beige claro */
+    border: 1px solid #d97d94;
+    padding: 20px;
+    border-radius: 8px;
+    margin: 20px auto;
+    max-width: 600px;
+}
+
+label {
+    color: #d97d94; /* Rosita claro */
+}
+
+input[type="submit"] {
+    background-color: #d97d94;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #ff6b9a;
+}
+
+/* Responsive */
+@media (max-width: 700px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+    nav {
         flex-direction: column;
     }
-    nav{
-        padding: 10px 0px;
+    section {
+        flex-direction: column;
+    } 
+    .logo img {
+        width: 200px; /* Este cosito hace que el tamaño sea más grande para pantallas grandes */
     }
 } 
-.galeria{
-    margin:0;
-    padding: 0;
-    box-align : center ;  
-    }
-    .container{
-        border-radius: 100px 10px 10px 10px;
-        box-shadow: 10px 10px 10px 10px;
-        
+/*Acá estan los estilos de los html de las recetas */ 
+.receta-detalle {
+    text-align: center;
+    padding: 20px;
+    font-family: sans-serif;
+}
 
+.receta-img {
+    width: 60%;
+    max-width: 400px;
+    border-radius: 10px;
+}
 
-    }
+.receta-detalle h1, .receta-detalle h2 {
+    color: #d48ca1; /* Color rosado claro */
+}
+
+.receta-detalle ul {
+    list-style-type: square;
+    text-align: left;
+    display: inline-block;
+    padding: 10px;
+}
