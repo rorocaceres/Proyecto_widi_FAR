@@ -60,31 +60,31 @@ body {
 /*da color al icono*/
 
 .redesheader .boton:nth-child(1):hover,
-.icono span {
+.icono span i {
     background: #3b5999;
     color: #fff;
 }
 
 .redesheader .boton:nth-child(3):hover,
-.icono span {
+.icono span i {
     background: linear-gradient(30deg, #3040e6 10%, #d41356, #e74f31, #f0ce6c);
     color: #fff;
 }
 
 .redesheader .boton:nth-child(2):hover,
-.icono span {
+.icono span i {
     background: #1877f2;
     color: #fff;
 }
 
 .redesheader .boton:nth-child(4):hover,
-.icono span {
+.icono span i {
     background: #d50000;
     color: #fff;
 }
 
 .redesheader .boton:nth-child(5):hover,
-.icono span {
+.icono span i {
     background: #d50000;
     color: #fff;
 }
@@ -104,6 +104,9 @@ body {
     margin-left: 10px;
 }
 
+
+/*Busacador*/
+
 .container {
     display: flex;
     align-items: center;
@@ -115,7 +118,7 @@ body {
     padding: 5px;
 }
 
-input {
+section input {
     display: flex;
     outline: none;
     box-sizing: border-box;
@@ -170,24 +173,8 @@ i {
     background: #d97d94;
 }
 
-.nav {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
 
-.nav,
-a {
-    gap: 50px;
-}
-
-.agusoro {
-    padding: 200px;
-}
-
-.rooagus {
-    padding: 200px;
-}
+/*Pie de pagina*/
 
 .pie {
     background: #fef6e4;
@@ -243,7 +230,7 @@ a {
 /*le da color al icono de redes*/
 
 .redes .icon:hover span i {
-    color: #d97d94;
+    color: #fff;
 }
 
 
