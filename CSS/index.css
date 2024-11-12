@@ -22,7 +22,7 @@ body {
 
 /*acomoda una arriba de los iconos y ocultas los nombres de las redes sociales atras de cada circulo*/
 
-.redesheader .boton {
+#redesheader .boton {
     display: inline-block;
     height: 57px;
     width: 57px;
@@ -38,14 +38,14 @@ body {
 
 /*crea el movimiento de cada uno de las redes sociales con los circulos*/
 
-.redesheader .boton:hover {
+#redesheader .boton:hover {
     width: 200px;
 }
 
 
 /*centras los iconos de las redes sociales*/
 
-.redesheader .boton .icono {
+#redesheader .boton .icono {
     display: inline-block;
     height: 60px;
     width: 60px;
@@ -59,37 +59,37 @@ body {
 
 /*da color al icono*/
 
-.redesheader .boton:nth-child(1):hover,
+#redesheader .boton:nth-child(1):hover,
 .icono span i {
     background: #3b5999;
     color: #fff;
 }
 
-.redesheader .boton:nth-child(3):hover,
+#redesheader .boton:nth-child(3):hover,
 .icono span i {
     background: linear-gradient(30deg, #3040e6 10%, #d41356, #e74f31, #f0ce6c);
     color: #fff;
 }
 
-.redesheader .boton:nth-child(2):hover,
+#redesheader .boton:nth-child(2):hover,
 .icono span i {
     background: #1877f2;
     color: #fff;
 }
 
-.redesheader .boton:nth-child(4):hover,
+#redesheader .boton:nth-child(4):hover,
 .icono span i {
     background: #d50000;
     color: #fff;
 }
 
-.redesheader .boton:nth-child(5):hover,
+#redesheader .boton:nth-child(5):hover,
 .icono span i {
     background: #d50000;
     color: #fff;
 }
 
-.redesheader .boton i {
+#redesheader .boton i {
     font-size: 30px;
     line-height: 60px;
 }
@@ -97,7 +97,7 @@ body {
 
 /*granda o achica los nombres de las redes */
 
-.redesheader .boton span {
+#redesheader .boton span {
     font-size: 20px;
     font-weight: 100px;
     line-height: 40px;
