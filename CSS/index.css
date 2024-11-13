@@ -57,7 +57,7 @@ body {
 }
 
 
-/*da color al icono*/
+/*da color a los iconos*/
 
 #redesheader .boton:nth-child(1):hover,
 .icono span i {
@@ -98,7 +98,7 @@ body {
 /*granda o achica los nombres de las redes */
 
 #redesheader .boton span {
-    font-size: 20px;
+    font-size: 25px;
     font-weight: 100px;
     line-height: 40px;
     margin-left: 10px;
