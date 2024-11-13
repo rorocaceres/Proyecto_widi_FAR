@@ -114,24 +114,33 @@ h1.nombre.pagina {
 
 nav {
     display: flex;
+    /*define la especificacion del contenido en el modelo flex*/
     justify-content: center;
+    /*justa el contenido en el centro*/
     gap: 100px;
+    /*separa el contenido */
 }
 
 nav a {
     position: relative;
+    /*posiciona relativa*/
     background: #f9c9c5;
     color: #d97d94;
     text-decoration: none;
+    /*saca la decoracion de la letra*/
     text-transform: uppercase;
+    /*tamaño de mayusculas y minusculas del texto*/
     font-size: 10.5px;
+    /*tamaño de letra*/
     letter-spacing: 0.1em;
+    /*defina la cantidad adicional de espacios entre lso caracteres*/
     padding: 5px 15px;
     transition: 0.5s;
 }
 
 nav a:hover {
     letter-spacing: 0.25em;
+    /*defina la cantidad adicional de espacios entre lso caracteres*/
     background: var(--clr);
     color: var(--clr);
     box-shadow: 0 0 35px var(--clr);
@@ -139,20 +148,26 @@ nav a:hover {
 
 nav a::before {
     content: "";
+    /*genera contenido antes o despues de un selector*/
     position: absolute;
+    /*posicion absoluta*/
     inset: 2px;
+    /**/
     background: #fef6e4;
 }
 
 nav a span {
     position: relative;
     z-index: 1;
+    /*ordena la posicion de el y sus desendientes*/
 }
 
 a i {
     position: absolute;
     inset: 0;
+    /**/
     display: block;
+    /*genera un cuadro de elemento de bloque.*/
 }
 
 
@@ -172,7 +187,7 @@ a i::before {
 }
 
 
-/*genera el movimiento del cuadrado*/
+/*genera el movimiento del cuadrado hacia la iziquierda*/
 
 a:hover i::before {
     width: 20px;
@@ -196,7 +211,7 @@ a i::after {
 }
 
 
-/*genera el movimiento del cuadrado*/
+/*genera el movimiento del cuadrado hacia la derecha*/
 
 a:hover i::after {
     width: 20px;
