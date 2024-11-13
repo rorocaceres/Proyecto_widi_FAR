@@ -130,7 +130,7 @@ nav a {
     /*saca la decoracion de la letra*/
     text-transform: uppercase;
     /*tamaño de mayusculas y minusculas del texto*/
-    font-size: 10.5px;
+    font-size: 15px;
     /*tamaño de letra*/
     letter-spacing: 0.1em;
     /*defina la cantidad adicional de espacios entre lso caracteres*/
@@ -165,7 +165,6 @@ nav a span {
 a i {
     position: absolute;
     inset: 0;
-    /**/
     display: block;
     /*genera un cuadro de elemento de bloque.*/
 }
