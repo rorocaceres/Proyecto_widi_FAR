@@ -60,8 +60,8 @@ body {
 
 /* Estilo para la imagen */
 .imagen-texto .imagen, .imagen-texto-reversa .imagen {
-    width: 300px; /* Establece el mismo tamaño para todas las imágenes */
-    height: 200px; /* Asegura que todas las imágenes tengan la misma altura */
+    width: 300px; /* Ancho de la imagen */
+    height: 280px; /* Establece una altura mayor para las imágenes */
     object-fit: cover; /* Mantiene la proporción de la imagen */
     animation: mover 3s ease-in-out infinite;
     border-radius: 8px; /* Bordes redondeados para las imágenes */
@@ -78,7 +78,7 @@ body {
     font-size: 1.1em;
     line-height: 1.6;
     color: #555;
-    margin-left: 20px; /* Espacio entre la imagen y el texto */
+    margin-left: 30px; /* Aumentado el espacio entre la imagen y el texto */
 }
 
 /* Movimiento de la imagen */
@@ -93,4 +93,3 @@ body {
         transform: translateX(0);
     }
 }
-
