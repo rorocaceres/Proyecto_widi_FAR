@@ -10,7 +10,7 @@ body {
     background-color: #ffe6e6; /* Rosado claro */
     padding: 40px;
     border-radius: 8px;
-    max-width: 800px;
+    max-width: 900px;
     margin: 40px auto;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
@@ -21,6 +21,7 @@ body {
     margin-bottom: 20px;
     text-align: center;
 }
+
 .historia h2 {
     font-size: 1.5em;
     color: #b35c5c; /* Rosado oscuro */
@@ -34,6 +35,7 @@ body {
     margin-bottom: 15px;
     text-align: justify;
 }
+
 .volver {
     display: block;
     text-align: center;
@@ -47,18 +49,36 @@ body {
     text-decoration: underline;
     color: #ff7b7b; /* Color al pasar el mouse */
 }
-.imagen-texto {
+
+/* Contenedor general para las secciones de imagen y texto */
+.imagen-texto, .imagen-texto-reversa {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    align-items: center; /* Alinea la imagen y el texto verticalmente */
     margin-top: 30px;
+    justify-content: flex-start; /* Alinea la imagen y el texto al inicio */
 }
 
-.imagen {
-    width: 300px;
-    height: auto;
-    margin-right: 20px;
+/* Estilo para la imagen */
+.imagen-texto .imagen, .imagen-texto-reversa .imagen {
+    width: 300px; /* Establece el mismo tamaño para todas las imágenes */
+    height: 200px; /* Asegura que todas las imágenes tengan la misma altura */
+    object-fit: cover; /* Mantiene la proporción de la imagen */
     animation: mover 3s ease-in-out infinite;
+    border-radius: 8px; /* Bordes redondeados para las imágenes */
+}
+
+/* Estilo específico para la segunda imagen (Damián Betular) */
+.imagen-texto-reversa .imagen {
+    border: 5px solid white; /* Borde blanco solo para la segunda imagen */
+}
+
+/* Estilo para el texto al lado de la imagen */
+.texto {
+    max-width: 600px;
+    font-size: 1.1em;
+    line-height: 1.6;
+    color: #555;
+    margin-left: 20px; /* Espacio entre la imagen y el texto */
 }
 
 /* Movimiento de la imagen */
@@ -74,10 +94,3 @@ body {
     }
 }
 
-/* Estilo para el texto al lado de la imagen */
-.texto {
-    max-width: 600px;
-    font-size: 1.1em;
-    line-height: 1.6;
-    color: #555;
-}
