@@ -83,7 +83,7 @@ body {
 
 /* Movimiento de la imagen */
 @keyframes mover {
-    0% {
+    0% { 
         transform: translateX(0);
     }
     50% {
