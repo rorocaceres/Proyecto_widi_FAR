@@ -347,3 +347,21 @@ form button[type=submit]:hover {
     border-radius: 50px;
     margin: 0 3px;
 }
+
+.volver {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 1.2em;
+    background: #ffe6e6;
+    color: #f58da7;
+    /* Rosado oscuro */
+    text-decoration: none;
+}
+
+.volver:hover {
+    text-decoration: underline;
+    color: #993e55;
+    /* Color al pasar el mouse */
+}
