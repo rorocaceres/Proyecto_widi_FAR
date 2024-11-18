@@ -1,0 +1,65 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    color: #333;
+    background-color: #fef6e4;
+}
+h1 {
+    color: #FFFFFF;
+    text-shadow: 1px 1px 1px black, 0 0 25px rgb(255, 182, 246), 0 0 5px #f25ff7;
+    text-align: center;
+    }
+    
+    h2 {
+        color: #FFFFFF;
+        text-shadow: 1px 1px 1px black, 0 0 25px rgb(255, 182, 246), 0 0 5px #f25ff7;
+        text-align:center;
+        }
+
+    div.galeria {
+    margin: 100px 20px;
+    box-shadow: 0 4px 8px 0 lemonchiffon, 0 6px 20px 0 rgba(0,0,0,0.19);
+    float: left;
+    width: 335px;
+    height: 280px;
+    }
+    
+    div.galeria img {
+    width: 335px;
+    height: 280px;
+    }
+    
+    div.galeria:hover {
+    border: 1px solid rgb(245, 144, 144);
+    transform: rotate(-3deg);
+    
+    }
+    
+    div.pie {
+    text-align: center;
+    text-shadow: 2px 2px 5px rgb(239, 64, 140);
+    padding: 10px;
+    }
+
+    .volver {
+        display: inline-block;
+        padding: 15px 30px;
+        background-color: #b35c5c; /* Rosado oscuro */
+        color: white;
+        font-size: 1.2em;
+        text-align: center;
+        text-decoration: none;
+        border-radius: 50px; /* Bordes redondeados */
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        transition: background-color 0.3s ease, transform 0.3s ease;
+        margin: 100px 20px;
+    }
+    
+    .volver:hover {
+        background-color: #ff7b7b; /* Color al pasar el mouse */
+        transform: scale(1.05); /* Efecto de aumento */
+    }
+    
+    .volver:active {
+        transform: scale(0.98); /* Efecto de pulsación */
+    }
