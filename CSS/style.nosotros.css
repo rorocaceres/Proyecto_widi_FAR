@@ -264,7 +264,8 @@ form button[type=submit]:hover {
 
 .car .descripcion p {
     margin-top: 20px;
-    font-size: 15px;
+    font-size: 11.5px;
+    color: #f58da7;
 }
 
 .car .contacto {
