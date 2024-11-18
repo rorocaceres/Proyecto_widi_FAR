@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     outline: 0;
+    box-sizing: border-box;
     font-family: cursive
 }
 
@@ -178,4 +179,164 @@ form button[type=submit]:hover {
     font-size: 20px;
     text-shadow: 6px 6px 10px #f58da7;
     color: #fff;
+}
+
+#equipo {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: #ffe6e6;
+}
+
+#equipo h2 {
+    font-size: 60px;
+    text-shadow: 0 0 10px #f58da7;
+    letter-spacing: 6px;
+    color: #fff;
+}
+
+.car {
+    position: relative;
+    width: 300px;
+    height: 400px;
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: .5s;
+    margin: 15px 20px;
+}
+
+.car:hover {
+    box-shadow: 0 5 15px rgba(245, 141, 167, 0.747);
+    transform: translateY(-15px);
+}
+
+.car .head {
+    height: 125px;
+    width: 100%;
+    position: relative;
+}
+
+.car .head .circle {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background: #f58da7;
+    bottom: 0;
+}
+
+.car .head .imagen {
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    background: #ffe6e6;
+    padding: 5px;
+    border-radius: 50%;
+    bottom: -30%;
+    left: 50%;
+    transform: translate(-50%)
+}
+
+.car .head .imagen img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.car .descripcion {
+    height: 200px;
+    padding: 40px 20px 20px 20px;
+    border-bottom: solid 1px rgba(6, 74, 76, .18);
+    text-align: center;
+}
+
+.car .descripcion h3 {
+    color: #c05570;
+}
+
+.car .descripcion h4 {
+    color: #b4425f;
+}
+
+.car .descripcion p {
+    margin-top: 20px;
+    font-size: 15px;
+}
+
+.car .contacto {
+    text-align: center;
+}
+
+.car .contacto ul {
+    list-style: none;
+    position: relative;
+    display: inline-block;
+}
+
+.car .contacto ul .text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: #f58da7;
+    color: #eee;
+    line-height: 50px;
+    border-radius: 50px;
+    font-size: 22px;
+    text-align: center;
+    pointer-events: none;
+    font-family: cursive;
+    transition: opacity .5s .75s ease-out;
+}
+
+.car .contacto ul:hover .text {
+    opacity: 0;
+    transition: opacity .5s .125s ease-out;
+}
+
+.car .contacto ul li {
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+    background: #f58da7;
+    line-height: 55px;
+    text-align: center;
+    margin: 0 -16px;
+    cursor: pointer;
+    border-radius: 0px;
+    transition: background-color .5s ease-out, border-radius .5s .25s ease-out, margin .5s .25s ease-out;
+}
+
+.car .contacto ul li:hover {
+    background: #c05570;
+}
+
+.car .contacto ul li i {
+    color: #eee;
+    font-size: 22px;
+    opacity: 0;
+    transition: opacity 1.7s;
+}
+
+.car .contacto ul:hover li i {
+    opacity: 1;
+}
+
+.car .contacto ul li:nth-child(1) {
+    border-bottom-left-radius: 25px;
+    border-top-left-radius: 25px;
+}
+
+.car .contacto ul li:nth-child(3) {
+    border-bottom-right-radius: 25px;
+    border-top-right-radius: 25px;
+}
+
+.car .contacto ul:hover li {
+    border-radius: 50px;
+    margin: 0 3px;
 }
