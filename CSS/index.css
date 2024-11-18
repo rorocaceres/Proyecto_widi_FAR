@@ -361,3 +361,9 @@ p {
 .pie {
     height: 70vh;
 }
+section img {
+    width: 100%; /* Ajusta el ancho al 100% de su contenedor */
+    height: auto; /* Mantiene la relación de aspecto */
+    max-width: 200px; /* Asegura que las imágenes no se expandan más de 200px */
+    object-fit: cover; /* Asegura que la imagen no se deforme */
+}
