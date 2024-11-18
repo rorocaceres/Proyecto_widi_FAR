@@ -5,6 +5,16 @@ body {
     background-color: #fef7f4; /* Beige claro */
     color: #333;
 }
+/* Agrege la fuente desde Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+
+.historia h1, .historia h2 {
+    font-family: 'Dancing Script', cursive; /* Fuente cursiva */
+    font-size: 2.5em;
+    color: #b35c5c; /* Rosado oscuro */
+    margin-bottom: 20px;
+    text-align: center;
+}
 
 .historia {
     background-color: #ffe6e6; /* Rosado claro */
@@ -37,18 +47,27 @@ body {
 }
 
 .volver {
-    display: block;
-    text-align: center;
-    margin-top: 20px;
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #b35c5c; /* Rosado oscuro */
+    color: white;
     font-size: 1.2em;
-    color: #b35c5c; /* Rosado oscuro */
+    text-align: center;
     text-decoration: none;
+    border-radius: 50px; /* Bordes redondeados */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
 .volver:hover {
-    text-decoration: underline;
-    color: #ff7b7b; /* Color al pasar el mouse */
+    background-color: #ff7b7b; /* Color al pasar el mouse */
+    transform: scale(1.05); /* Efecto de aumento */
 }
+
+.volver:active {
+    transform: scale(0.98); /* Efecto de pulsación */
+}
+
 
 /* Contenedor general para las secciones de imagen y texto */
 .imagen-texto, .imagen-texto-reversa {
